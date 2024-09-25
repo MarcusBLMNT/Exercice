@@ -20,6 +20,7 @@ namespace Exercice
             defaultText = _defaultText;
             Text = defaultText;
             HorizontalAlignment = HorizontalAlignment.Stretch;
+            VerticalAlignment = VerticalAlignment.Stretch;
             TextAlignment = TextAlignment.Center;
             
         }
