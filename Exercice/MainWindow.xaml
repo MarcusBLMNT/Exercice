@@ -1,0 +1,22 @@
+﻿<Window x:Class="Exercice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <local:SliderControl Grid.Column="0"></local:SliderControl>
+        <Slider  Grid.Column="1" Value="10" Maximum="15" Minimum="0" Height="300" VerticalAlignment="Center" AllowDrop="True" TickFrequency="1"
+                 AutoToolTipPlacement="BottomRight" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Cursor="Hand" Orientation="Vertical"/>
+        <Image Grid.Column="1" Source="/Assets/Capture d'écran 2024-09-24 195258.png" Stretch="UniformToFill"/>
+
+    </Grid>
+ 
+</Window>
